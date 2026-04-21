@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include <stdlib.h> /* for putchar() */
+#include "main.h" /* for _putchar() */
+#include <stdlib.h> 
 
 /**
  * Author: Michael Iyanuoluwa Oduwaiye
@@ -19,25 +19,20 @@
 
 
 int main(void) {
-	char one = '_';
-	char two = 'p';
-	char three = 'u';
-	char four = 't';
-	char five = 'c';
-	char six = 'h';
-	char seven = 'a';
-	char eight = 'r';
+	int i = 0;
 
-	putchar(one);
-	putchar(two);
-	putchar(three);
-	putchar(four);
-	putchar(five);
-	putchar(six);
-	putchar(seven);
-	putchar(eight);
+	char c;
 
-	putchar('\n');
+	char a[] = "_putchar"; /* we shall run this through a loop for 8 items */
+	
+	while(i < 8) {
+		c = a[i];
 
+		_putchar(c);
+
+		i++;
+	}
+	
+	_putchar('\n'); /* Prints a new line */
 	return (0);
 }
