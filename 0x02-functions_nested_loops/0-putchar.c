@@ -4,8 +4,7 @@
 /**
  * Author: Michael Iyanuoluwa Oduwaiye
  * Program: WinMingle Community C Training
- * Description: 
- * Prints "_putchar" to screen followed by a new line. 
+ * Description: Prints "_putchar" to screen followed by a new line. 
  * Program should also return 0. 
  * Compile with gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 0-putchar.c -o 0-putchar
  * -Wall --> Warn all, show all warnings
@@ -17,19 +16,16 @@
  * GGC command structure: gcc [options] [source files] [output flag]
 */
 
-
+/* this prints _putchar to scren */
 int main(void) {
 	int i = 0;
-
 	char c;
 
 	char a[] = "_putchar"; /* we shall run this through a loop for 8 items */
 	
 	while(i < 8) {
 		c = a[i];
-
 		_putchar(c);
-
 		i++;
 	}
 	
